@@ -19,13 +19,13 @@
 define('DB_NAME', 'fastacash_wp');
 
 /** MySQL database username */
-define('DB_USER', 'wordpressuser');
+define('DB_USER', '');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'MjhcqKpbEkDkts6blkRB');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
-define('DB_HOST', 'aa1odlbr9cii4ph.c6r6wt95sak1.ap-southeast-1.rds.amazonaws.com');
+define('DB_HOST', '');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
