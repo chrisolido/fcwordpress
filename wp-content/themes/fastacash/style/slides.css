@@ -1,0 +1,355 @@
+
+#ribbon {
+	position:absolute;
+	top:-3px;
+	left:-15px;
+	z-index:500;
+}
+
+#frame {
+	position:absolute;
+	z-index:0;
+	width:739px;
+	height:341px;
+	top:-3px;
+	left:-80px;
+}
+
+.caption{
+	font-size:16px;
+}
+/*
+	Slideshow
+*/
+body.home #home-wrapper{
+	position:absolute;
+	top:130px;
+	z-index:-2;
+	background-color:#ccc;
+	width: 100%;
+	height:570px;
+}
+strong{
+}
+#iphone{
+	background-image: url("/wp-content/themes/fastacash/images/iphone.png");
+	height: 620px;
+	width: 330px;
+	position:absolute;
+	z-index:9;
+	top: -100px;
+}
+
+#screenshot{
+	height:368px;
+	width: 256px;
+	margin-top: 30px;
+	margin-left: 38px;
+	margin-bottom: 120px;
+	background-color: #fff;
+}
+#slides {/*
+	position:absolute;
+	top:15px;
+	left:4px;
+	z-index:100;
+	
+	*/
+	visibility:hidden;
+	display:none;
+	height:502px;
+	
+	width: 292px;
+	margin-top: 20px;
+	margin-left: 38px;
+	
+}
+.slide-title{
+	font-size: 32px;
+	line-height:36px;
+	margin-top: 48px;
+	color: #fff;
+}
+.slide-title img {
+	margin-bottom:19px;
+}
+.slide1-title{
+	color:#58595b; 
+	font-size:32px; 
+	line-height:18px;
+}
+.slide1-p{
+	
+	display:block;
+	clear:both;
+	font-size:18px;
+	line-height: 24px;
+	color:#58595b;
+	margin: 9px 0 0 0 ;
+	padding:0;
+	width: 400px;
+}
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:256px;
+	height: 460px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+	
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container div.slide {
+	width:300px;
+	height:270px;
+	display:block;
+}
+
+
+/*
+	Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+	position:absolute;
+	top:107px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+	visibility:hidden;
+}
+
+#slides .next {
+	left:585px;
+}
+#slides .caption {
+	visibility:hidden;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin:35px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url("../images/pagination.png");
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+/*
+	Pagination1
+*/
+
+.pagination1 {
+	margin:0 0 0 138px;
+	width:100px;
+}
+
+.pagination1 li {
+	float:left;
+	margin:0 3px;
+	list-style:none;
+}
+
+.pagination1 li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination1 li.current a {
+	background-position:0 -12px;
+}
+.call-to-action a img{
+	float:left;
+}
+.call-to-action a span{
+	line-height:normal;
+	color: #58595b;
+	float:left;
+	display:block;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 154px;
+}
+.call-to-action a.button {
+	margin-bottom: 10px;
+	}
+
+
+@media screen and (max-width: 980px) {	
+	#iphone{
+		background-repeat:no-repeat;
+		background-size: 270px;
+		position:absolute;
+		z-index:9;
+		top: 0px;
+		left: 450px;
+		height: 520px;
+		width:320px;
+	}
+	#screenshot{
+		width: 213px;
+		height: auto;
+		position:absolute;
+		top: 75px;
+		left: 440px;
+	}
+	h2.slide-title img{
+		height:auto;
+		width:60px;
+		margin-top:20px;
+	}
+	.pagination1 {
+		display:none;
+	}
+}
+@media screen and (max-width: 568px) {
+	.pagination1 {
+		display:none;
+	}
+	.col-460{
+		width: 200px;
+	}
+	#featured{
+		min-height: 870px;
+	}
+	#featured-image{
+		top: 0px;
+		left:0px;
+		width: 100%;
+		position:absolute;
+	}
+	#iphone{
+		background-repeat:no-repeat;
+		background-size: 270px;
+		position:absolute;
+		z-index:9;
+		top: 435px;
+		left: 0px;
+		height: 520px;
+		width:300px;
+	}
+	#screenshot{
+		width: 213px;
+		height: auto;
+		position:absolute;
+		top: 510px;
+		left: -10px;
+	}
+	h2.slide-title{
+		font-size: 18px;
+		line-height:normal;
+		margin-top: 30px;
+		color: #fff;
+	}
+	h2.slide-title img{
+		height:auto;
+		width:40px;
+	}
+	h2 .slide1-title{
+		font-size:24px; line-height:normal;
+	}
+	.slide1-p{
+		display:block;
+		clear:both;
+		font-size:14px;
+		line-height: normal;
+		color:#58595b;
+		margin: 20px 0;
+		padding:0;
+		width:100%;
+	}
+	body.home #container{
+		height:1100px;
+	}
+	body.home #home-wrapper{
+		position:absolute;
+		top:105px;
+		background-color:#fff;
+		height:1100px;
+		
+	}
+	.call-to-action a {
+		font-size: 12px;
+		
+	}
+	.call-to-action a img{
+		width: 120px;
+	}.call-to-action a span{
+		width: 110px;
+	}
+	.call-to-action a.button {
+		font-size:24px;
+		padding: 10px;
+		text-align: center;
+		float:left;
+		margin-bottom: 20px;
+	}
+	
+}
+
+@media screen and (max-width: 320px) {
+	body.home #container{
+		height:1020px !important;
+	}
+	#menu-login{
+		display:none;
+	}
+	body.home #home-wrapper{
+		position:absolute;
+		top:65px;
+		background-color:#fff;
+		height:1100px;
+	}
+
+	#iphone{
+		top: 390px;
+	}
+	#screenshot{
+		top: 465px;
+	}
+}
+
+

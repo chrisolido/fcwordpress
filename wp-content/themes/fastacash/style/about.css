@@ -1,0 +1,66 @@
+h1,h2,h3,h4{
+	color:  #ff6600;
+}
+h1{
+	font-size: 36px;
+	margin-bottom: 50px;
+	margin-top: 60px;
+}
+h2{
+	font-size: 24px;
+	margin-bottom: 2px;
+	margin-top:0px;
+}
+p{
+	margin-top: 0px;
+	font-size: 16px;
+}
+.bio{
+	float:left;
+	clear:both;
+	margin-bottom: 50px;
+}
+.bio .photo{
+	width: 160px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float:left;
+}
+.bio .detail{
+	width: 700px;
+	float:left;
+}
+@media screen and (max-width: 650px) {
+	.bio .detail{
+		width:auto;
+		font-size:14px;
+	}
+}
+@media screen and (max-width: 320px) {
+	h1{
+		font-size: 26px;
+		line-height:1em;
+		margin-bottom: 50px;
+		margin-top: 60px;
+	}
+	h2{
+		font-size: 21px;
+		
+	}
+	p{
+		font-size: 14px;
+	}
+	
+	.bio .photo{
+		width: 80px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+	.bio .detail{
+		width:auto;
+		font-size:14px;
+	}
+	.bio  img[src*="placeholder"] {
+		display: none;
+	}
+}
